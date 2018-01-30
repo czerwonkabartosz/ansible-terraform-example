@@ -20,7 +20,7 @@ terraform apply
 
 Run Ansible playbook:
 ```
-sh ansible_runner.sh ~/.ssh/id_rsa terraform/ workspace ansible/haproxy.yml
+sh ansible_runner.sh ~/.ssh/id_rsa terraform/ dev-env ansible/haproxy.yml
 ```
 
 
