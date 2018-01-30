@@ -1,0 +1,11 @@
+---
+
+- name: HAProxy
+  hosts: haproxy
+  user: ubuntu
+  become: yes
+
+  roles:
+    - role: devops-coop.haproxy
+      tags:
+        - haproxy

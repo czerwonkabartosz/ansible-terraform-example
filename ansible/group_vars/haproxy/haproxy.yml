@@ -1,0 +1,14 @@
+--- 
+haproxy_frontends:
+- name: frontend
+  ip:
+  bind:
+  - '*:80'
+  default_backend: backend
+haproxy_backends:
+- name: backend
+  description: Backend descrption.
+  servers:
+    - name: staging_lb
+      ip: '192.30.253.113'
+      port: 80
